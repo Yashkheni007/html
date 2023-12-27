@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        #main-table {
+            /* border-collapse: collapse; */
+            border: 1px solid black;
+            margin: 0px auto;
+            width: 400px;
+        }
+
+        #sub-table {
+            /* border-collapse: collapse; */
+            border-bottom: 1px solid #DDD;
+        }
+
+        tr,
+        td,
+        th {
+            /* border: 1px solid black; */
+            border-collapse: collapse;
+            /* border-bottom: 1px solid #DDD; */
+        }
+
+        /* tr:hover{
+            background-color: rgba(231, 239, 245, 0.824);
+        } */
+
+        td:hover {
+            background-color: rgba(231, 239, 245, 0.824);
+        }
+
+    </style>
+</head>
+
+<body>
+    <table id="main-table">
+        <caption>Menu</caption>
+        <tr>
+            <th style="width: 70px;">Item</th>
+            <th style="width: 250px;">Variety</th>
+            <th>Rs.</th>
+        </tr>
+        <tr>
+            <th>dosa</th>
+            <td colspan="2">
+                <table id="sub-table">
+                    <tr>
+                        <td style="width: 249px;">Plain Dosa</td>
+                        <td style="width: 68px;">120</td>
+                    </tr>
+                    <tr>
+                        <td>Masala Dosa</td>
+                        <td>150</td>
+                    </tr>
+                    <tr>
+                        <td>Palak Paneer</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>Jini Roll</td>
+                        <td>180</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Dosa</td>
+                        <td>210</td>
+                    </tr>
+                    <tr>
+                        <td>Cheese Chilly Dosa</td>
+                        <td>210</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <th>Pizza</th>
+            <td colspan="2">
+                <table id="sub-table">
+                    <tr>
+                        <td style="width: 249px;">Onion Pizza</td>
+                        <td style="width: 68px;">89</td>
+                    </tr>
+                    <tr>
+                        <td>Sweet Corn Pizza</td>
+                        <td>99</td>
+                    </tr>
+                    <tr>
+                        <td>Margarita Pizza</td>
+                        <td>169</td>
+                    </tr>
+                    <tr>
+                        <td>7 Cheesy Pizza</td>
+                        <td>169</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tfoot id="footer">
+            <tr>
+                <td colspan="3" style="text-align: center;">Thank You for ordered!</td>
+            </tr>
+            <tr>
+                <td colspan="3" style="text-align: center;">Please wait! your order is preparing</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
