@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(242, 242, 242);
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+
+      h2 {
+        margin-top: 0px;
+        text-align: center;
+      }
+
+      fieldset {
+        height: max-content;
+        width: auto;
+        align-items: center;
+        border: ridge;
+      }
+
+      legend {
+        font-family: fantasy;
+        font-size: small;
+      }
+
+      form {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        width: 450px;
+      }
+      .form-label {
+        display: block;
+        margin-bottom: 5px;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+      .form-input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      option {
+        font-size: xx-large;
+        font-style: bold;
+      }
+
+      button {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 10px;
+        font-size: 17px;
+        color: white;
+        background-color: rgb(95, 178, 95);
+      }
+
+      button:hover {
+        background-color: rgb(82, 153, 82);
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <h2>Registration Form</h2>
+      <fieldset>
+        <legend>Personal Detail</legend>
+        <label class="form-label" for="fname">First Name:</label>
+        <input
+          class="form-input"
+          type="text"
+          name="fname"
+          id="fname"
+          required
+        />
+
+        <label class="form-label" for="lname">Last Name:</label>
+        <input
+          class="form-input"
+          type="text"
+          name="lname"
+          id="lname"
+          required
+        />
+
+        <label class="form-label" for="address">Address</label>
+        <textarea
+          class="form-input"
+          rows="4"
+          name="address"
+          placeholder="Enter text here..."
+        ></textarea>
+
+        <label class="form-label" for="email">Email:</label>
+        <input
+          class="form-input"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="ex : abc@xyz.com"
+          required
+        />
+
+        <label class="form-label" for="phoneNumber">Phone Number:</label>
+        <input
+          class="form-input"
+          type="tel"
+          name="phoneNumber"
+          placeholder="1234567890"
+          id="phoneNumber"
+        />
+
+        <label class="form-label" for="password">Password:</label>
+        <input
+          class="form-input"
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+
+        <label class="form-label" for="dob">Date Of Birth:</label>
+        <input class="form-input" type="date" name="dob" id="dob" required />
+
+        <!-- <label for="gender" id="gender">Gender:</label>
+        <input class="form-input" type="radio" name="gender" id="male" required />
+        <label for="male">Male</label>
+        <input class="form-input" type="radio" name="gender" id="female" required />
+        <label for="female">Female</label> -->
+        <label for="gender" class="form-label">Gender:</label><br />
+        <input
+          type="radio"
+          id="male"
+          name="gender"
+          value="male"
+          style="margin-bottom: 10px"
+        />
+          <label for="male">Male</label>  
+        <input
+          type="radio"
+          id="female"
+          name="fav_language"
+          value="female"
+          style="margin-bottom: 10px"
+        />
+         
+        <label for="female">Female</label>
+         
+
+        <label class="form-label" for="city">City:</label>
+        <select class="form-input" name="city" id="city" required>
+          <option value="" disabled selected>Select your City</option>
+          <option value="surat">Surat</option>
+          <option value="ahemdabad">Ahemdabad</option>
+          <option value="vadodara">Vadodara</option>
+          <option value="Navsari">navsari</option>
+          <option value="bhavnagar">Bhavnagar</option>
+        </select>
+
+        <button type="submit">Register</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
